@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@font-face {
+    font-family: 'Beyond';
+    src: url(../font/beyond_the_mountains.otf) format('truetype'), url(../font/beyond_the_mountains.ttf) format('opentype')
+}
+:root{
+    --primary-color:#f39c12;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.4;
+    box-sizing: border-box;
+    user-select: none;
+}
+*{   
+    box-sizing: inherit;
+}
+body{
+    overflow-x: hidden;
+    /* background-image: linear-gradient(red, yellow,green,blue); */
+}
+.grid{
+    width: 1200px;
+    max-width: calc(100% - 40px);
+    margin:0 auto;
+}
+.hide{
+    display: none !important;;
+}
+.page__current{
+    color:var(--primary-color)!important;
+}
+h1, p{
+    margin:0;
+}
+
+.home .js-home{
+    color:var(--primary-color);
+}
+.home .js-home .seperate{
+    background-color: var(--primary-color);
+}
+.about .js-about{
+    color:var(--primary-color);
+}
+.about .js-about .seperate{
+    background-color: var(--primary-color);
+}
+.travel .js-travel{
+    color:var(--primary-color);
+}
+.travel .js-travel .seperate{
+    background-color: var(--primary-color);
+}
+.tickets .js-tickets{
+    color:var(--primary-color);
+}
+.tickets .js-tickets .seperate{
+    background-color: var(--primary-color);
+}
+.contact .js-contact{
+    color:var(--primary-color);
+}
+.contact .js-contact .seperate{
+    background-color: var(--primary-color);
+}
+.tickets #content__tickets{
+    display: block;
+}
+/* modal  */
+#modal{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: AppearModalOverlay 0.4s ease;
+    z-index: 1;
+}
+.modal__frame__wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modal__frame{
+    width: 440px;
+    background-color: white;
+    border-radius: 2px;
+    margin:60px 100px 0 0;
+    color:black;   
+    width: transform;
+    animation: AppearModalFrame 0.4s ease;
+}
+.modal__header{
+    margin:0 60px;
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    color:var(--primary-color);
+}
+.modal__header-title-login,.modal__header-title-register{
+    display: none;
+}
+.modal__content{
+    margin:0 60px;
+}
+.modal__header h1{
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+#modal .input__area{
+    border-bottom: 2px solid var(--primary-color);
+    margin:20px 0 10px 0;
+}
+#modal .input__area i{
+    font-size: 1.6rem;
+    margin-right:2px;
+    color: var(--primary-color);
+}
+#modal .input__area input{
+    background-color: transparent;
+    outline:none;
+    border: none;
+    padding:8px;
+    font-size: 1.8rem;
+    color:black;
+}
+.check__register{
+    align-items: center;
+    font-size: 1.4rem;
+    color:red;
+    display: none;
+}
+.check__register span{
+    font-size: 2.1rem;
+    margin-right: 4px;
+}
+.check__notification{
+    margin-top:16px;
+}
+.err__for__login{
+    font-size: 1.6rem;
+    margin-top:16px;
+    color:red;
+    align-items: center;
+    display: none;
+}
+.err__for__login span{
+    font-size: 2.1rem;
+    margin-right: 4px;
+}
+#modal .button__area{
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 1.8rem;
+    margin-top:40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: none;
+    cursor: pointer;
+}
+.disable__button{
+    opacity: 0.6!important;
+}
+#modal .button__area:hover{
+   border: 2px solid #ccc;
+}
+
+#modal .login__seperate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px 0;
+}
+.login__seperate-item{
+    width: 40%;
+    height: 1px;
+    background-color: black;
+    opacity: 0.6;
+}
+.login__seperate-text{
+    font-size: 1.4rem;
+    color: black;
+    opacity: 0.8;
+}
+
+/* login with  */
+.login__with{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-top:30px;
+    font-size: 1.6rem;
+}
+.login__with-item{
+    border:2px solid var(--primary-color);
+    height: 100%;
+    width: 48%;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--primary-color);
+    cursor: pointer;
+}
+.login__with-item i{
+    margin-right:6px;
+    font-size: 1.3rem;
+}
+.login__with-item:hover{
+    color:white;
+    background-color: var(--primary-color);
+
+}
+.text__des__footer {
+    margin:35px 0;
+    font-size: 1.6rem;
+    color:black;
+    text-align: center;
+    display: none;
+}
+.change_button_modal{
+    color:var(--primary-color);
+    cursor: pointer;
+}
+.change_button_modal:hover{
+    opacity: 0.6;
+}
+/* change type  */
+.modal__type-login .modal__header-title-login{
+    display: block;
+}
+.modal__type-register .modal__header-title-register{
+    display: block;
+}
+.modal__type-register .button__type-register{
+    display: flex!important;
+}
+.modal__type-login .button__type-login{
+    display: flex!important;
+}
+.modal__type-register .register__footer{
+    display: block;
+}
+.modal__type-login .login__footer{
+    display: block;
+}
+.modal__type-login .err__for__login{
+    display: flex;
+}
+.modal__type-register .check__register{
+    display: flex;
+}
+.input__for__login, .input__for__register{
+    display: none;
+}
+.modal__type-register .input__for__register{
+    display: block;
+}
+.modal__type-login .input__for__login{
+    display: block;
+}
+/* book ticket  */
+#book__ticket{
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+.book__ticket__form{
+    position: relative;
+    background-color: white;
+    width: 540px;
+    max-width: calc(100% - 20px);
+    padding:0 40px;
+    border-radius: 8px;
+    animation: showBookTicket 0.3s ease;
+    overflow: hidden;
+}
+.book__ticket__close{
+    position: absolute;
+    top:0;
+    right:0;
+    padding:6px 8px;
+    cursor: pointer;
+    border-top-right-radius: 8px;
+}
+.book__ticket__close:hover{
+    background-color: rgb(234, 113, 113);
+}
+.book__ticket__header{
+    padding:30px 0 20px 0;
+    font-size: 2rem;
+}
+.book__ticket__content form > input{
+    width: 100%;
+    padding:8px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #350a4e;
+    margin: 6px 0;
+    font-size: 1.6rem;
+}
+.book__ticket__button{
+    margin: 36px  0;
+    padding:8px;
+    color:white;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.book__ticket__button:hover{
+    border: 2px solid #c5c5c5;
+}
+.book__ticket__button__disable{
+    border: 2px solid var(--primary-color)!important;
+    color:white!important;
+    opacity: 0.5;
+    cursor: default;
+}
+.book__ticket__content #checkbox__for__bookticket{
+    padding:8px;
+    margin:0 8px;
+}
+.checkbox__bookticket label{
+    font-size: 1.4rem;
+}
+.checkbox__bookticket{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:14px;
+}
+.book__ticket__success{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: white; 
+    border-radius: 8px;
+}
+.book__ticket__success__wrapper{
+    position: relative;
+    width: 100%;
+    height: 87%;
+}
+.book__ticket__success__wrapper .background__img__booked{
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/travel109.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.book__ticket__success__wrapper .background__content__booked{
+    position: absolute;
+    top:10%;
+    left:10%;
+}
+.background__content__booked h1{
+    font-size: 2.6rem;
+    font-family: 'Beyond';
+    margin-bottom: 10px;
+    color:var(--primary-color);
+    text-shadow: 0 2px black;
+}
+.background__content__booked p{
+    max-width: 60%;
+    font-size: 1.9rem;
+}
+.book__ticket__success__button{
+    width: 100%;
+    height: 13%;
+    background-color: rgb(68, 218, 45);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+.book__ticket__success__button:hover{
+    background-color: rgb(13, 197, 13);
+}
+.background__booked{
+    position: absolute;
+    bottom:10px;
+    right:80px;
+    width: 70%;
+}
+
+
+/* modifier for stories */
+.left0{
+    left:0;
+}
+.left1{
+    left:-50%;
+}
+.left2{
+    left:-100%;
+}
+.left3{
+    left:-150%;
+}
+.left4{
+    left:-200%;
+}
+.left5{
+    left:-250%;
+}
+.left6{
+    left:-300%;
+}
+.disable{
+    opacity: 0.2;
+}
+/* css for home  */
+.home .bg__title-home{
+    display: block;
+}
+.home .bg__subtitle-home{
+    display: block;
+}
+.home #content{
+    display: block;
+}
+/* css for about  */
+
+.about .bg__subtitle-about{
+    font-size: 10rem;
+    display: block;
+}
+.about #content__about{
+    display: block;
+}
+/* css for travel */
+.travel .bg__title-travel{
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    display: block;
+}
+.travel .bg__subtitle-travel{
+    display: block;
+}
+.travel #content__travel{
+    display: block;
+}
+/* css for contact  */
+.contact #content__contact{
+    display: block;
+}
+.contact .bg__title-contact{
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+    display: block;
+}
+.contact .bg__subtitle-contact{
+    display: block;
+}
+/* css for offers  */
+
+.tickets .bg__subtitle-tickets{
+    display: block;
+}
+
+/* nation  */
+.js-nation{
+    display: none;
+}
+.area__Asian .Asian{
+    display: block;
+}
+.area__Europan .Europan{
+    display: block;
+}
+.area__American .American{
+    display: block;
+}
+.area__African .African{
+    display: block;
+}
+.area__all .js-nation{
+    display: block;
+}
+.js-nation.js-nation-all{
+    display: block;
+}
+
+
+
+/* keyframes */
+@keyframes growUp{
+    from{
+        width: 0%;
+    }to{
+        width: 70%;
+    }
+}
+@keyframes textHeader{
+    from{
+        top:-200px;
+        opacity: 0;
+    }
+    to{
+        top:-80px;
+        opacity: 1;
+    }
+}
+@keyframes textHeader2{
+    from{
+        left:20%;
+        opacity: 1;
+    }
+    to{
+        left:100%;
+        opacity: 0;
+    }
+}
+@keyframes textDes{
+    from{
+        top:-140px;
+        opacity: 0;
+    }to{
+        top:-40px;
+        opacity: 1;
+    }
+}
+@keyframes navbar {
+    from{
+        height:100px;
+    }
+    to{
+        height:60px;
+    }
+}
+@keyframes navbarGrow {
+    from{
+        height:70px;
+    }
+    to{
+        height:100px;
+    }
+}
+@keyframes AppearModalFrame{
+    from{
+        margin-bottom:200px;
+        opacity: 0;
+    }
+    to{
+        margin-bottom:0px;
+        opacity: 1;
+    }
+}
+@keyframes AppearModalOverlay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes SearchInput{
+    from{
+        opacity: 0;
+        top:0;
+    }
+    to{
+        opacity: 1;
+        top:50;
+    }
+}
+@keyframes aboutRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes aboutRotateItem{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes aboutStaticItem{
+    from{
+        transform: translate(-50%, -50%),rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%),rotate(-360deg);
+    }
+}
+@keyframes calenderShow{
+    from{
+        height: 0;     
+        opacity: 0;
+    }
+    to{
+        height: 312px;
+        opacity: 1;
+    }
+}
+@keyframes showInfoFrame{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes showBookTicket{
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

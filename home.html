@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    
+    <!-- link font gg  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- link css  -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <title>Travel with us</title>
+</head>
+<body>
+    <div id="main" class="">
+        <div id="header">
+            <div class="navbar__top">
+                <div class="grid navbar__top-wrapper">
+                    <ul class="navbar__top-contact">
+                        <li><a href="tel:0383642670">+84 383 642 670</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100036084976728"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com/home?lang=vi"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://dribbble.com/"><i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="https://www.behance.net/"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul>
+                    <div class="navbar__top-name"><span>QP & HK</span></div>
+                </div>
+            </div>
+            <div class="navbar__on__mobile">
+                <div class="nb__on__mb__left js-menu-on-mb">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+                <div class="nb__on__mb__login">Login</div>
+            </div>
+            <div class="navbar__bottom grid">
+                <div class="navbar__bottom-left">
+                    <img src="./assets/img/sunset.png" alt="">
+                    <h1> travel</h1>
+                </div>
+                <ul class="navbar__bottom-center">
+                    <li class="navbar__item js-home">
+                        <span>home</span>
+                        <span class="seperate"></span>
+                    </li>
+                    <li class="navbar__item js-about">
+                        <span>about</span>
+                        <span class="seperate"></span>                      
+                    </li>
+                    <li class="navbar__item js-travel">
+                        <span>travel</span>
+                        <span class="seperate"></span>
+                    </li>
+                    <li class="navbar__item js-tickets">
+                        <span>tickets</span>
+                        <span class="seperate"></span>
+                    </li>
+                    <li class="navbar__item js-contact">
+                        <span>contact</span>
+                        <span class="seperate"></span>
+                    </li>
+                </ul>
+                <div class="navbar__bottom-right ">
+                    <div class="cart__ticket  hide">
+                        <div class="cart__ticket__number flex__box">2</div>
+                        <span class="material-symbols-outlined">shopping_bag</span>
+                        <div class="notify__frame hide">
+                            <!-- render  -->
+                        </div>
+                    </div>
+                    <div class="button__login button js-login-header "><a href="#background__video">LOGIN</a></div>   
+                    <div class="user__info js-user hide">
+                        <img src="./assets/img/me.jpg" alt="">
+                        <div class="user__info__frame">
+                            <div class="user__info__item name__of__user"></div>
+                            <div class="user__info__item">Thông tin tài khoản</div>
+                            <div class="user__info__item">Hoạt động gần đây</div>
+                            <div class="user__info__item">Thông báo</div>
+                            <div class="user__info__item js-logout">Đăng xuất</div>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="background__video">       
+            <img class="background__app__img" src="./assets/img/background-temp.jpg" alt="">
+            <div class="background__content">
+                <div class="grid bg__ct-wrapper">
+                    <div class="bg__ct-header">
+                        <h1 class="bg__title bg__title-home">Welcome to</h1>
+                        <h1 class="bg__subtitle bg__subtitle-home"> my website</h1>
+                        <!-- for travel  -->
+                        <h1 class="bg__title bg__title-travel">This is</h1>
+                        <h1 class="bg__subtitle bg__subtitle-travel"> Your travel</h1>
+                        <!-- for about  -->
+                        <h1 class="bg__subtitle bg__subtitle-about">About</h1>
+                        <!-- for tickets  -->
+                        <h1 class="bg__subtitle bg__subtitle-tickets">Book Tickets</h1>
+                        <!-- for contact  -->
+                        <h1 class="bg__title bg__title-contact">Do you want to</h1>
+                        <h1 class="bg__subtitle bg__subtitle-contact"> Contact me?</h1>
+                    </div>
+                    <div class="bg__ct-description">
+                        <span class="bg__des">Keep up with what's new and exciting all around the city with our blog. Whether it's coffee, dining, local music or amazing craft beer, you can hear about it all here! </span>
+                    </div>
+                    <div class="bg__ct-button"><span>Get started</span></div>
+                </div>
+            </div>
+            
+            <!-- modal  -->
+            <div id="modal" class="hide">
+               <div class="grid modal__frame__wrapper">
+                    <div class="modal__frame modal__type-login">
+                        <div class="modal__header">
+                            <h1 class="modal__header-title-login">Sign in</h1>
+                            <h1 class="modal__header-title-register">Join Travel</h1>
+                        </div>
+                        <div class="modal__content">
+                            <div class="input__area input__for__login">
+                                <i class="fas fa-user"></i>
+                                <input id="text" type="text" placeholder="User name....">
+                            </div>
+                            <div class="input__area input__for__register">
+                                <i class="fas fa-user"></i>
+                                <input id="text__register" type="text" placeholder="User name....">
+                            </div>
+                            <p class="check__register  check__for__user">
+                                
+                            <div class="input__area input__for__login">
+                                <i class="fas fa-unlock-alt"></i>
+                                <input id="password" type="password" placeholder="Password...">
+                            </div>
+                            <div class="input__area input__for__register">
+                                <i class="fas fa-unlock-alt"></i>
+                                <input id="password__register" type="password" placeholder="Password...">
+                            </div>
+                            <p class="check__register check__for__password"></p>
+                            <div class="button__area button__type-login js-login-modal">Sign in</div>
+                            <div class="button__area button__type-register js-register-modal">Join now</div>
+                            <p class="check__register check__notification"></p>
+                            <p class="err__for__login"></p>
+                            <div class="login__seperate">
+                                <div class="login__seperate-item"></div>
+                                <div class="login__seperate-text">OR</div>
+                                <div class="login__seperate-item"></div>
+                            </div>
+                            <div class="login__with">
+                                <div class="login__with-item">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+            
+                                </div>
+                                <div class="login__with-item">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </div>
+                            </div>
+                            <div class="text__des__footer login__footer">New to Travel ?  <span class="change_button_modal change_button_modal-register">Join now</span></div>
+                            <div class="text__des__footer register__footer">Already have an account?  <span class="change_button_modal change_button_modal-login">Sign in</span></div>
+                        </div>
+                    </div>
+               </div>
+        </div>
+        </div>
+        <div id="content">
+            <div class="content2">
+                <div class=" grid content__component-name"><h1>our services</h1></div>
+                <div class="grid content2__wrapper">
+                    <div class="content2__left">
+                        <div class="content2__left-item">
+                            <div class="ct2__l__icon"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class="ct2__l__text">
+                                <h1>Provide global travel services</h1>
+                                <p>We pride ourselves on providing top of the line tours throughout the Far North Queensland and Cairns Hinterland regions. including Kuranda, Paronella Park and Port Douglas.</p>
+                            </div>
+                        </div>
+                        <div class="content2__left-item">
+                            <div class="ct2__l__icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="ct2__l__text">
+                                <h1>Support to book tickets online quickly and conveniently</h1>
+                                <p>We're focused on making travel better for everyone. To make the entire planning and booking experience easy, simple and enjoyable from start to finish.</p>
+                            </div>
+                        </div>
+                        <div class="content2__left-item">
+                            <div class="ct2__l__icon"><i class="fas fa-gift"></i></div>
+                            <div class="ct2__l__text">
+                                <h1>Many attractive gifts and vouchers</h1>
+                                <p>Lorem ipsum dolor sit Dolorem, ad!  quia a perspiciatis aut quaerat nobis iusto, enim accusantium perferendis exercitationem, ad assumenda asperiores .</p>
+                            </div>
+                        </div>
+                        <div class="content2__left-item">
+                            <div class="ct2__l__icon"><i class="fas fa-thumbs-up"></i></div>
+                            <div class="ct2__l__text">
+                                <h1>Give you great travel experiences</h1>
+                                <p>Lorem ipsum dolor sit Dolorem, ad!  quia a perspiciatis aut quaerat nobis iusto, enim accusantium perferendis exercitationem, ad assumenda asperiores .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content2__right">
+                        <img src="./assets/img/hero-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content3">
+                <div class=" grid content__component-name">
+                    <h1>Let's go</h1>
+                </div>
+                <div class="content3__section grid">
+                    <div class="content3__section__wrapper">
+                        <div class="section__img ">
+                            <img class="img" src="./assets/img/about.png" alt="">
+                        </div>
+                        <div class="section__text">
+                            <div class="section__text__top">
+                                <h1>Libero natus  adipisci odio, c tenetur !</h1>
+                                <p>consequatur adipisci odio, corporis nulla hic? Cupiditate debitis tenetur dicta facere optio dolores autem sit labore!</p>
+                            </div>
+                            <div class="section__text__center">
+                                <h1>Why should you choose our service?</h1>
+                                <div class="section__text__center__item">
+                                    <img src="./assets/img/check.png" alt="">
+                                    <span>Our service is in the top 10 best travel services in the world</span>
+                                </div>
+                                <div class="section__text__center__item">
+                                    <img src="./assets/img/check.png" alt="">
+                                    <span>We provide you with the most premium travel services</span>
+                                </div>
+                                <div class="section__text__center__item">
+                                    <img src="./assets/img/check.png" alt="">
+                                    <span>Book tickets quickly and easily</span>
+                                </div>
+                            </div>
+                            <div class="section__text__bottom">
+                                <p>magni saepe optio earum iusto assumenda labore! Doloribus itaque ducimus nostrum saepe. Veniam cumque rem nostrum officia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content4">
+                <div class=" grid content__component-name"><h1>Must-see Places</h1></div>
+                <div class="ct4__wrapper grid">
+                    <div class="ct4__item">
+                        <h1 class="ct4__item-title">Vung Tau, Viet Nam</h1>
+                        <p class="ct4__item-des">Vung Tau has long been considered an attractive tourist destination, because of its natural beauty. </p>
+                        <div class="ct4__item-price">
+                            <p class="ct4__item-price-dolar">360$</p>
+                            <p class="ct4__item-price-time"> for 2 weeks</p>
+                        </div>
+                        <div class="ct4__button">SEE MORE</div>
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/vungtau1.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/vungtau2.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/vungtau3.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/vungtau4.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="ct4__wrapper grid ">
+                    <div class="ct4__item">
+                        <h1 class="ct4__item-title">Da Lat, Viet Nam</h1>
+                        <p class="ct4__item-des">Da Lat is currently the most famous tourist city in Vietnam. The place is known as the dream city with thousands of flowers racing to bloom.
+                        </p>
+                        <div class="ct4__item-price">
+                            <p class="ct4__item-price-dolar">840$</p>
+                            <p class="ct4__item-price-time"> for 2 months</p>
+                        </div>
+                        <div class="ct4__button">SEE MORE</div>
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/dalat1.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/dalat3.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/dalat2.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/dalat4.jpg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="ct4__wrapper grid ">
+                    <div class="ct4__item">
+                        <h1 class="ct4__item-title">SaPa, Viet Nam</h1>
+                        <p class="ct4__item-des">Considered the most beautiful and majestic place in the North, Sapa always attracts a large number of tourists all year round. After coming to Sapa, people want to stay forever.</p>
+                        <div class="ct4__item-price">
+                            <p class="ct4__item-price-dolar">440$</p>
+                            <p class="ct4__item-price-time"> for 1 weeks</p>
+                        </div>
+                        <div class="ct4__button">SEE MORE</div>
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/sapa1.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/sapa3.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/sapa2.jpg" alt="">
+                    </div>
+                    <div class="ct4__item">
+                        <img src="./assets/img/sapa4.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="content5">
+                <div class=" grid content__component-name"><h1>Inspirational stories</h1></div>
+                <div class="content5__wrapper grid">
+                    <div class="content5__left ">
+                        <div class="icon__transfer icon__transfer__left disable">
+                            <span class="material-symbols-outlined">
+                            arrow_back_ios
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content5__center">
+                        <div class="content5__center-list left0">
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">Lorem ipsum dolor sit amet. Quidem inventore facere fugit. Delectus ipsa nam blanditiis dignissimos quisquam.</p>
+                                <h1 class="ct5__item__author">Le Quan Phat</h1>
+                                <p class="ct5__item__address">HoChiMinh, VN</p>
+                                <img src="./assets/img/me3.jpg" alt="" class="ct5__item__img">
+                            </div>
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">Lorem ipsum dolor sit amet. Quidem inventore facere fugit. Delectus ipsa nam blanditiis dignissimos quisquam.</p>
+                                <h1 class="ct5__item__author">Ho Do Hoang Khang</h1>
+                                <p class="ct5__item__address">HoChiMinh, VN</p>
+                                <img src="./assets/img/khang.jpg" alt="" class="ct5__item__img">
+                            </div>
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">It's great, I had memorable experiences when traveling to Vietnam. I hope I will have the opportunity to visit Vietnam again.</p>
+                                <h1 class="ct5__item__author">Elon Musk</h1>
+                                <p class="ct5__item__address">Texas, United States</p>
+                                <img src="./assets/img/elonmusk.jpg" alt="" class="ct5__item__img">
+                            </div>
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">I have wanted to come to Vietnam for a long time and only now have I been able to do it. It's great to say this was my best trip. Thanks for this trip!</p>
+                                <h1 class="ct5__item__author">Bill Gates</h1>
+                                <p class="ct5__item__address">California, United States</p>
+                                <img src="./assets/img/billgates.jpg" alt="" class="ct5__item__img">
+                            </div>
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">After my trip to Vietnam last week, I intend to move Facebook headquarters to Vietnam.</p>
+                                <h1 class="ct5__item__author">Mark Zuckerberg</h1>
+                                <p class="ct5__item__address">Menlo Park, California</p>
+                                <img src="./assets/img/mark.jpg" alt="" class="ct5__item__img">
+                            </div>
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">Lorem ipsum dolor sit amet. Quidem inventore facere fugit. Delectus ipsa nam blanditiis dignissimos quisquam.</p>
+                                <h1 class="ct5__item__author">Ronaldo</h1>
+                                <p class="ct5__item__address">Man United, Football</p>
+                                <img src="./assets/img/ronaldo.jpg" alt="" class="ct5__item__img">
+                            </div>
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">Lorem ipsum dolor sit amet. Quidem inventore facere fugit. Delectus ipsa nam blanditiis dignissimos quisquam.</p>
+                                <h1 class="ct5__item__author">Tim Cook</h1>
+                                <p class="ct5__item__address"> Alabama, United States</p>
+                                <img src="./assets/img/timcook.png" alt="" class="ct5__item__img">
+                            </div>
+
+                            <div class="ct5__center-item">
+                                <div class="ct5__item-star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="ct5__item__stories">Lorem ipsum dolor sit amet. Quidem inventore facere fugit. Delectus ipsa nam blanditiis dignissimos quisquam.</p>
+                                <h1 class="ct5__item__author">User</h1>
+                                <p class="ct5__item__address">Earth</p>
+                                <img src="./assets/img/user.png" alt="" class="ct5__item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content5__right icon__transfer__right">
+                        <div class="icon__transfer">
+                            <span class="material-symbols-outlined">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div id="content__about">
+            <div class="content__about1 grid">
+                <div class=" grid content__component-name"><h1>ABOUT US</h1></div>
+                <div class="content__about1__wrapper">
+                    <div class="ct__ab__item">
+                        <h1 class="title">TRAVEL: Global travel service</h1>
+                        <p class="title_des">Companies: TFF Group & TFL Group</p>
+                        <p class="des">Supported by 200 countries and territory</p>
+                        <h1 class="title">Our service is one of the best in the world</h1>
+                        <p class="des">Coming to TRAVEL, you will be provided with the best services, completely free of travel costs during the trip. You can choose your preferred mode of transportation. TRAVEL brings you the best experience</p>
+                        <p class="subdes">Page: Travel</p>
+                        <p class="subdes">Developder: Le Quan Phat & Ho Do Hoang Khang</p>
+                    </div>
+                    <div class="ct__ab__item">
+                        <div class="frame__rotate">
+                            <img src="./assets/img/circle.png" alt="" class="rotate">
+                            <div class="item item1"><i class="fas fa-plane"></i></div>
+                            <div class="item item2"><i class="fas fa-shuttle-van"></i></div>
+                            <div class="item item3"><i class="fas fa-hotel"></i></div>
+                            <div class="item item4"><i class="fas fa-motorcycle"></i></div>
+                            <div class="item item5"><i class="fas fa-anchor"></i></div>  
+                        </div>
+                        <div class="frame__static">
+                            <img src="./assets/img/qr.png" alt="" class="static__item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content__about2 grid">
+                <div class="content__component-name"><h1>Year statistics</h1></div>
+                <div class="component-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe unde reprehenderit maiores, magni nam repellat mollitia tempora ducimus quia corrupti fuga eum consequatur quibusdam debitis eaque est, illo sint quaerat?</div>
+                <div class="ct__ab2__wrapper">
+                    <div class="ct__ab2__item title"><p>2020</p><p>2021</p></div>
+                    <div class="ct__ab2__item">
+                        <div class="quantity__item">
+                            <div class="left"><span class="material-symbols-outlined">hail</span></div>
+                            <div class="right">
+                                <p class="quantity">23642</p>
+                                <p class="des">Clients</p>
+                            </div>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__item__line chart__item__line--blue"></div>
+                            <div class="chart__item__rate">+45%</div>
+                        </div>
+                        <div class="quantity__item">
+                            <div class="right">
+                                <p class="quantity">34151</p>
+                                <p class="des">Clients</p>
+                            </div>
+                            <div class="left"><span class="material-symbols-outlined">hail</span></div>
+                        </div>
+                        
+                    </div>
+                    <div class="ct__ab2__item">
+                        <div class="quantity__item">
+                            <div class="left"><span class="material-symbols-outlined">handshake</span></div>
+                            <div class="right">
+                                <p class="quantity">342</p>
+                                <p class="des">Partner</p>
+                            </div>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__item__line chart__item__line--purple"></div>
+                            <div class="chart__item__rate">+47%</div>
+                        </div>
+                        <div class="quantity__item">
+                            <div class="right">
+                                <p class="quantity">504</p>
+                                <p class="des">Partner</p>
+                            </div>
+                            <div class="left"><span class="material-symbols-outlined">handshake</span></div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="ct__ab2__item">
+                        <div class="quantity__item">
+                            <div class="left"><span class="material-symbols-outlined">local_taxi</span></div>
+                            <div class="right">
+                                <p class="quantity">3729</p>
+                                <p class="des">Books</p>
+                            </div>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__item__line chart__item__line--yellow"></div>
+                            <div class="chart__item__rate">+126%</div>
+                        </div>
+                        <div class="quantity__item">
+                            <div class="right">
+                                <p class="quantity">8429</p>
+                                <p class="des">Books</p>
+                            </div>
+                            <div class="left"><span class="material-symbols-outlined">local_taxi</span></div>
+                        </div>
+                        
+                    </div>
+                    <div class="ct__ab2__item">
+                        <div class="quantity__item">
+                            <div class="left"><span class="material-symbols-outlined">sailing</span></div>
+                            <div class="right">
+                                <p class="quantity">11546</p>
+                                <p class="des">Books</p>
+                            </div>
+                        </div>
+                        <div class="chart__item">
+                            <div class="chart__item__line chart__item__line--red"></div>
+                            <div class="chart__item__rate">-19%</div>
+                        </div>
+                        <div class="quantity__item">
+                            <div class="right">
+                                <p class="quantity">9321</p>
+                                <p class="des">Books</p>
+                            </div>
+                            <div class="left"><span class="material-symbols-outlined">sailing</span></div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+        </div>
+        
+        <div id="content__travel">
+            <div id="content-travel1" class="grid">
+                <div class="content__component-name"><h1>start your travel</h1></div>
+                <div class="ct__travel1-search">
+                    <div class="ct__tv1-category">
+                        <p>Continents</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item js-area ">Show all</div>
+                            <div class="ct__tv__category-item js-area ">Europan</div>
+                            <div class="ct__tv__category-item js-area ">Asian</div>
+                            <div class="ct__tv__category-item js-area ">American</div>
+                            <div class="ct__tv__category-item js-area ">African</div>
+                        </div>
+                    </div>
+                    <div class="ct__tv1-category">
+                        <p>Nations</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list nation area__all ">
+                            <!-- // render -->
+                        </div>
+                    </div>
+                    
+                    <div class="ct__tv1-category on__pc">
+                        <p>departure</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="calender">
+                            <div class="calender__top">
+                                <span class="material-symbols-outlined">arrow_back_ios</span>
+                                <p>January 2023</p>
+                                <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </div>
+                            <div class="calender__wrapper">
+                                <div class="calender__item header">CN</div>
+                                <div class="calender__item header">T2</div>
+                                <div class="calender__item header">T3</div>
+                                <div class="calender__item header">T4</div>
+                                <div class="calender__item header">T5</div>
+                                <div class="calender__item header">T6</div>
+                                <div class="calender__item header">T7</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                                <div class="calender__item">5</div>
+                                <div class="calender__item">6</div>
+                                <div class="calender__item">7</div>
+                                <div class="calender__item">8</div>
+                                <div class="calender__item">9</div>
+                                <div class="calender__item">10</div>
+                                <div class="calender__item">11</div>
+                                <div class="calender__item">12</div>
+                                <div class="calender__item">13</div>
+                                <div class="calender__item">14</div>
+                                <div class="calender__item">15</div>
+                                <div class="calender__item">16</div>
+                                <div class="calender__item">17</div>
+                                <div class="calender__item">18</div>
+                                <div class="calender__item">19</div>
+                                <div class="calender__item">20</div>
+                                <div class="calender__item">21</div>
+                                <div class="calender__item">22</div>
+                                <div class="calender__item">23</div>
+                                <div class="calender__item">24</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="ct__tv1-category on__pc">
+                        <p>return</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="calender">
+                            <div class="calender__top">
+                                <span class="material-symbols-outlined">arrow_back_ios</span>
+                                <p>January 2023</p>
+                                <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </div>
+                            <div class="calender__wrapper">
+                                <div class="calender__item header">CN</div>
+                                <div class="calender__item header">T2</div>
+                                <div class="calender__item header">T3</div>
+                                <div class="calender__item header">T4</div>
+                                <div class="calender__item header">T5</div>
+                                <div class="calender__item header">T6</div>
+                                <div class="calender__item header">T7</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                                <div class="calender__item">5</div>
+                                <div class="calender__item">6</div>
+                                <div class="calender__item">7</div>
+                                <div class="calender__item">8</div>
+                                <div class="calender__item">9</div>
+                                <div class="calender__item">10</div>
+                                <div class="calender__item">11</div>
+                                <div class="calender__item">12</div>
+                                <div class="calender__item">13</div>
+                                <div class="calender__item">14</div>
+                                <div class="calender__item">15</div>
+                                <div class="calender__item">16</div>
+                                <div class="calender__item">17</div>
+                                <div class="calender__item">18</div>
+                                <div class="calender__item">19</div>
+                                <div class="calender__item">20</div>
+                                <div class="calender__item">21</div>
+                                <div class="calender__item">22</div>
+                                <div class="calender__item">23</div>
+                                <div class="calender__item">24</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="ct__tv1-category">
+                        <p>Stars</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item js-stars-travel">Show all</div>
+                            <div class="ct__tv__category-item js-stars-travel">1</div>
+                            <div class="ct__tv__category-item js-stars-travel">2</div>
+                            <div class="ct__tv__category-item js-stars-travel">3</div>
+                            <div class="ct__tv__category-item js-stars-travel">4</div>
+                            <div class="ct__tv__category-item js-stars-travel">5</div>
+                        </div>
+                    </div>    
+                    <div class="ct__tv1-category">
+                        <p>Price</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item js-price-travel">Default</div>
+                            <div class="ct__tv__category-item js-price-travel">Ascending</div>
+                            <div class="ct__tv__category-item js-price-travel">Descending</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct__travel1-frame">
+                    <!-- render js  -->
+                </div>
+                <div class="ct__travel1-nextPage js-travel-next-page">
+                    <a href="#content__travel" class="ct__tv1-nextPage-item return-page-button">
+                        <span class="material-symbols-outlined">
+                        arrow_back_ios
+                        </span>
+                    </a>
+                    <div class="ct__tv1-nextPage-item number page-current">1</div>
+                    <div class="ct__tv1-nextPage-item">/</div>
+                    <div class="ct__tv1-nextPage-item number page-max">5</div>
+                    <a href="#content__travel" class="ct__tv1-nextPage-item next-page-button">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div id="content__tickets">
+            <div class="content__tickets1 grid">
+                <div class="content__component-name"><h1>Book tickets</h1></div>
+                <div class="ct__travel1-search">
+                    <div class="ct__tv1-category">
+                        <p class="js-ct__tk__category__vehicle">Services</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item js-tk-vehicle ">Show all</div>
+                            <div class="ct__tv__category-item js-tk-vehicle ">House</div>
+                            <div class="ct__tv__category-item js-tk-vehicle ">Yacht</div>
+                            <div class="ct__tv__category-item js-tk-vehicle">Car</div>
+                        </div>
+                    </div>
+                    <div class="ct__tv1-category on__pc">
+                        <p>departure</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="calender">
+                            <div class="calender__top">
+                                <span class="material-symbols-outlined">arrow_back_ios</span>
+                                <p>January 2023</p>
+                                <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </div>
+                            <div class="calender__wrapper">
+                                <div class="calender__item header">CN</div>
+                                <div class="calender__item header">T2</div>
+                                <div class="calender__item header">T3</div>
+                                <div class="calender__item header">T4</div>
+                                <div class="calender__item header">T5</div>
+                                <div class="calender__item header">T6</div>
+                                <div class="calender__item header">T7</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                                <div class="calender__item">5</div>
+                                <div class="calender__item">6</div>
+                                <div class="calender__item">7</div>
+                                <div class="calender__item">8</div>
+                                <div class="calender__item">9</div>
+                                <div class="calender__item">10</div>
+                                <div class="calender__item">11</div>
+                                <div class="calender__item">12</div>
+                                <div class="calender__item">13</div>
+                                <div class="calender__item">14</div>
+                                <div class="calender__item">15</div>
+                                <div class="calender__item">16</div>
+                                <div class="calender__item">17</div>
+                                <div class="calender__item">18</div>
+                                <div class="calender__item">19</div>
+                                <div class="calender__item">20</div>
+                                <div class="calender__item">21</div>
+                                <div class="calender__item">22</div>
+                                <div class="calender__item">23</div>
+                                <div class="calender__item">24</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="ct__tv1-category on__pc">
+                        <p>Return</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="calender">
+                            <div class="calender__top">
+                                <span class="material-symbols-outlined">arrow_back_ios</span>
+                                <p>January 2023</p>
+                                <span class="material-symbols-outlined">arrow_forward_ios</span>
+                            </div>
+                            <div class="calender__wrapper">
+                                <div class="calender__item header">CN</div>
+                                <div class="calender__item header">T2</div>
+                                <div class="calender__item header">T3</div>
+                                <div class="calender__item header">T4</div>
+                                <div class="calender__item header">T5</div>
+                                <div class="calender__item header">T6</div>
+                                <div class="calender__item header">T7</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                                <div class="calender__item">5</div>
+                                <div class="calender__item">6</div>
+                                <div class="calender__item">7</div>
+                                <div class="calender__item">8</div>
+                                <div class="calender__item">9</div>
+                                <div class="calender__item">10</div>
+                                <div class="calender__item">11</div>
+                                <div class="calender__item">12</div>
+                                <div class="calender__item">13</div>
+                                <div class="calender__item">14</div>
+                                <div class="calender__item">15</div>
+                                <div class="calender__item">16</div>
+                                <div class="calender__item">17</div>
+                                <div class="calender__item">18</div>
+                                <div class="calender__item">19</div>
+                                <div class="calender__item">20</div>
+                                <div class="calender__item">21</div>
+                                <div class="calender__item">22</div>
+                                <div class="calender__item">23</div>
+                                <div class="calender__item">24</div>
+                                <div class="calender__item">25</div>
+                                <div class="calender__item">26</div>
+                                <div class="calender__item">27</div>
+                                <div class="calender__item">28</div>
+                                <div class="calender__item">29</div>
+                                <div class="calender__item">30</div>
+                                <div class="calender__item">31</div>
+                                <div class="calender__item">1</div>
+                                <div class="calender__item">2</div>
+                                <div class="calender__item">3</div>
+                                <div class="calender__item">4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ct__tv1-category">
+                        <p>Stars</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item js-tk-stars">Show all</div>
+                            <div class="ct__tv__category-item js-tk-stars">1</div>
+                            <div class="ct__tv__category-item js-tk-stars">2</div>
+                            <div class="ct__tv__category-item js-tk-stars">3</div>
+                            <div class="ct__tv__category-item js-tk-stars">4</div>
+                            <div class="ct__tv__category-item js-tk-stars">5</div>
+                        </div>
+                    </div>
+                    <div class="ct__tv1-category">
+                        <p class="js-ct__tk__category__price">Price</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item js__tk__price">Default</div>
+                            <div class="ct__tv__category-item js__tk__price">Ascending</div>
+                            <div class="ct__tv__category-item js__tk__price">Descending</div>
+                        </div>
+                    </div>
+                    <div class="ct__tv1-category">
+                        <p>other services</p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                        <div class="ct__tv__category-list">
+                            <div class="ct__tv__category-item">+ Food Service</div>
+                            <div class="ct__tv__category-item">+ music service</div>
+                            <div class="ct__tv__category-item">+ health services</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct__travel1-frame ct__tk__frame">
+                  <!-- // render  -->
+                </div>
+                <div class="ct__travel1-nextPage js-travel-next-page">
+                    <a href="#content__tickets" class="ct__tv1-nextPage-item return-page-tickets-button">
+                        <span class="material-symbols-outlined">
+                        arrow_back_ios
+                        </span>
+                    </a>
+                    <div class="ct__tv1-nextPage-item number page-current-tickets ">1</div>
+                    <div class="ct__tv1-nextPage-item">/</div>
+                    <div class="ct__tv1-nextPage-item number page-max-tickets">5</div>
+                    <a href="#content__tickets" class="ct__tv1-nextPage-item next-page-tickets-button">
+                        <span class="material-symbols-outlined">
+                            arrow_forward_ios
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="content__contact">
+            <div class=" grid content__component-name"><h1>Contact me</h1></div>
+            <div class="content__contact__wrapper grid">
+                <div class="ct__ct__top">
+                    <h1 class="title">Get in touch</h1>
+                    <p class="description">Eaque adipisci placeat, delectus, hic quasi accusantium laborum ipsam itaque animi doloremque repudiandae voluptas. Eum nihil rerum quas cum blanditiis, dolorem fugit.</p>
+                    <div class="ct__ct__top-item">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        lequanphat3579@gmail.com
+                    </div>
+                    <div class="ct__ct__top-item">
+                        <span class="material-symbols-outlined">
+                            phone_in_talk_watchface_indicator
+                        </span>
+                        0925587197
+                    </div>
+                    <div class="ct__ct__top-item">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        157/89 Dương Bá Trạc, Quận 8
+                    </div>
+                    
+                </div>
+                <div class="ct__ct__bottom">
+                </div>
+                <img class="contact__img__call hide" 
+                    src="./assets/img/contact.png" alt="">
+                <div class="contact__form">
+                    <h1 class="header">say something</h1>
+                    <input type="text" placeholder="Name...">
+                    <input type="text" placeholder="Email...">
+                    <input type="text" placeholder="Message...">
+                    <div class="button">send</div>
+                </div>
+                <img class="contact__img__on__tablet" src="./assets/img/contact.png" alt="">
+                <div class="contact__follow">
+                    <h1 class="contact__follow__title">FOLLOW ME</h1>
+                    <p class="contact__follow__des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae mollitia possimus vitae aperiam perferendis qui id adipisci illo, necessitatibus dolorem dolorum.</p>
+                    <div class="contact__flex__icon">
+                        <div class="icon__frame"><i class="fab fa-facebook-f"></i></div>
+                        <div class="icon__frame"><i class="fab fa-twitter"></i></div>
+                        <div class="icon__frame"><i class="fab fa-dribbble"></i></div>
+                        <div class="icon__frame"><i class="fab fa-behance"></i></div>
+                        <div class="icon__frame"><i class="fab fa-linkedin-in"></i></div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer__wrapper grid">
+                <div class="footer__wrapper__top">
+                    <div class="ft_top-item"><h1 class="logo">Travel</h1></div>
+                    <div class="ft_top-item"><h1>Blog posts</h1></div>
+                    <div class="ft_top-item"><h1>Tags</h1></div>
+                    <div class="ft_top-item"><h1>Contact me</h1></div>
+                </div>
+                <div class="footer__wrapper__top-column">
+                    <div class="ft_top-item">
+                        
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis cum accusamus sit facilis unde facere, tempora sint. Ratione odit ut eaque. Porro sapiente maiores ducimus voluptas quo molestias nostrum.</p>
+                    </div>
+                    <div class="ft_top-item">
+                        <div class="ft_top-item-post">
+                            <img src="./assets/img/post2.jpg" alt="">
+                            <div class="ft_top-item-post-title">
+                                <h1 class="post__name__for__phone">Viet Nam</h1>
+                                <h1>Ha Long Bay, VietNam</h1>
+                                <p>July 14, 2022</p>
+                            </div>
+                        </div>
+                        <div class="ft_top-item-post">
+                            <img src="./assets/img/post1.jpg" alt="">
+                            <div class="ft_top-item-post-title">
+                                <h1 class="post__name__for__phone">Viet Nam</h1>
+                                <h1>SaPa, VietNam</h1>
+                                <p>June 19, 2022</p>
+                            </div>
+                        </div>
+                        <div class="ft_top-item-post">
+                            <img src="./assets/img/post3.jpg" alt="">
+                            <div class="ft_top-item-post-title">
+                                <h1 class="post__name__for__phone">Viet Nam</h1>
+                                <h1>Vung Tau, VietNam</h1>
+                                <p>May 22, 2022</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="ft_top-item">
+                        <a href="https://edition.cnn.com/travel/article/tripadvisor-travelers-choice-awards-2022/index.html" class="tag-item">Travel</a>
+                        <a class="tag-item">Picture</a>
+                        <a href="https://www.roughguides.com/gallery/the-most-adventurous-places-to-travel/" class="tag-item">Adventure</a>
+                        <a href="https://www.forbes.com/sites/larryolmsted/2018/03/22/the-worlds-top-10-best-travel-tour-experiences-ranked-by-you/?sh=41244eb042f8" class="tag-item">Tour</a>
+                        <a class="tag-item">Party</a>
+                        <a class="tag-item">Holiday</a>
+                    </div>
+                    <div class="ft_top-item">
+                        <a href ="https://www.google.com/maps/place/157%2F89+D.+B%C3%A1+Tr%E1%BA%A1c,+Ph%C6%B0%E1%BB%9Dng+1,+Qu%E1%BA%ADn+8,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7502263,106.6854656,16.22z/data=!4m5!3m4!1s0x31752f08a006ad4f:0x34459adf20d3df38!8m2!3d10.7503584!4d106.6881071?hl=vi" class="contact ">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            157/89 Duong Ba Trac, District 8
+                        </a>
+                        <a href="https://www.google.com/maps/place/157%2F89+D.+B%C3%A1+Tr%E1%BA%A1c,+Ph%C6%B0%E1%BB%9Dng+1,+Qu%E1%BA%ADn+8,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7502263,106.6854656,16.22z/data=!4m5!3m4!1s0x31752f08a006ad4f:0x34459adf20d3df38!8m2!3d10.7503584!4d106.6881071?hl=vi" class="contact on__tablet">
+                            <span class="material-symbols-outlined">
+                                location_on
+                            </span>
+                            District 8, HCM City
+                        </a>
+                        <a href="tel:0925587197" class="contact">
+                            <span class="material-symbols-outlined">
+                            phone_in_talk_watchface_indicator
+                            </span>
+                            0925587197
+                        </a>
+                        <p class="contact on__tablet">
+                            <span class="material-symbols-outlined">
+                            phone_in_talk_watchface_indicator
+                            </span>
+                            0925587197
+                        </p>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=GTvVlcSHxjXqCswFbHTcgwFtGCHdRqvxfQxvHDGhXDhQwXZDCMwGrcqJWbTXnMVNCgRtFnRDMTBKq" class="contact">
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                            lequanphat3579@gmail.com
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox?compose=GTvVlcSHxjXqCswFbHTcgwFtGCHdRqvxfQxvHDGhXDhQwXZDCMwGrcqJWbTXnMVNCgRtFnRDMTBKq" class="contact on__tablet">
+                            <span class="material-symbols-outlined">
+                                mail
+                            </span>
+                            travel@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__wrapper__bottom">
+                    <div class="ft_bt-item copyright"><i class="far fa-copyright"></i> Copyright 2022 by QuanPhat & HoangKhang, SaiGon University.</div>
+                    <div class="ft_bt-item">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-dribbble"></i>
+                        <i class="fab fa-behance"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="book__ticket" class="hide">
+            <div class="book__ticket__form">
+                <div class="book__ticket__header">Contact Details</div>
+                <div class="book__ticket__content">
+                    <form action="">
+                        <input id="book__ticket__name" type="text" placeholder="Your name...">
+                        <input id="book__ticket__tel" type="tel" placeholder="Phone / Email...">
+                        <input id="book__ticket__note" type="text" placeholder="Note...">
+                        <div class="checkbox__bookticket">
+                            <input type="checkbox" name="" id="checkbox__for__bookticket">
+                            <label for="checkbox__for__bookticket">Do you agree to our terms of service ?</label>
+                        </div>
+                        <div class="book__ticket__button">confirm and book tickets</div>
+                    </form>
+                </div>
+                <!--   -->
+                <div class="book__ticket__success hide"> 
+                    <div class="book__ticket__success__wrapper">
+                        <div class="background__img__booked"></div>
+                        <div class="background__content__booked">
+                            <h1>An Giang, Viet Nam</h1>
+                            <p>Just a short ferry ride from mainland Hiroshima is the island of Miyajima, famous the world over as Japan\'s Shrine Island.</p>
+                        </div>
+                        <img src="./assets/img/booked3.png" class="background__booked"></img>
+                    </div>
+                    <div class="book__ticket__success__button js-book__ticket__close">CONTINUE</div>
+                </div>
+                <div class="book__ticket__close js-book__ticket__close"><span class="material-symbols-outlined">close</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- script  -->
+    <script src="./assets/js/render.js"></script>
+
+</body>
+</html>
