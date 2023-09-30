@@ -1,6 +1,7 @@
 # [Project] Travel website
 ### Overview
 [no] Boostrap, Jquery
+---
 [only] HTML, CSS, JAVASCRIPT
 ### Home
 ![GitHub Logo](/images/demo1.jpg)
