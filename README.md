@@ -1,7 +1,8 @@
 # [Project] Travel website
 ### Pure
 [only] HTML, CSS, JAVASCRIPT
-[Demo](https://lequanphat.github.io/travel-website/)
+### Demo
+[https://lequanphat.github.io/travel-website/](https://lequanphat.github.io/travel-website/)
 ### Home
 ![GitHub Logo](/images/demo1.jpg)
 ### Login
