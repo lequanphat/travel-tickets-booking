@@ -2,7 +2,7 @@
 ### Pure
 [only] HTML, CSS, JAVASCRIPT
 ### Demo
-[https://lequanphat.github.io/travel-website/](https://lequanphat.github.io/travel-website/)
+[https://lequanphat.github.io/travel-tickets-booking/](https://lequanphat.github.io/travel-tickets-booking/)
 ### Home
 ![GitHub Logo](/images/demo1.jpg)
 ### Login
